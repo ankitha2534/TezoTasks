@@ -1,0 +1,58 @@
+<div class="main">
+  <div class="side-bar">
+    <div class="to-do-title">
+      <img src="assets/To-Do App.svg" alt="To-Do-App" />
+    </div>
+    <div class="add-task-button" (click)="openAddTaskModal()">
+      <button type="button">Add Task</button>
+      <img src="assets/Add button.svg" alt="Add-Icon" />
+    </div>
+    <div class="navigation-block">
+      <div class="side-bar-navigation" routerLink="/side-bar/dashboard" routerLinkActive="active-link">
+        Dashboard
+      </div>
+      <div class="side-bar-navigation" routerLink="/side-bar/active-tasks" routerLinkActive="active-link">
+        Active
+      </div>
+      <div class="side-bar-navigation" routerLink="/side-bar/completed-tasks" routerLinkActive="active-link">
+        Completed
+      </div>
+    </div>
+  </div>
+  <!-- mobile view start -->
+  <div class="main-screen">
+    <div class="side-bar-screen">
+      <div class="header">
+        <div class="to-do-title">
+          <img src="assets/To-Do App.svg" alt="To-Do-App" />
+        </div>
+        <div class="header-right">
+          <div class="add-task-button" (click)="openAddTaskModal()">
+            <button type="button">Add Task</button>
+            <img src="assets/Add button.svg" alt="Add-Icon" />
+          </div>
+          <div class="sign-out-container" (click)="signOut()">
+            <button type="button" class="sign-out-button">Sign Out</button>
+            <img src="/assets/mdi_logout.svg" alt="LogOut Icon" class="sign-out-icon" />
+          </div>
+        </div>
+      </div>
+      <div class="dropdown-nav">
+        <select (change)="onSelect($event)">
+          <option value="/side-bar/dashboard">Dashboard</option>
+          <option value="/side-bar/active-tasks">Active</option>
+          <option value="/side-bar/completed-tasks">Completed</option>
+        </select>
+      </div>
+    </div>
+    <div class="dashboard-screen">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <!-- mobile view end -->
+  <div class="dashboard">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<app-add-task *ngIf="isModalOpen" [showModal]="isModalOpen"
+  (showModalChange)="updateModalChange($event)"></app-add-task>

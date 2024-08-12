@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: 'Public Sans', sans-serif;
+}
+/* .dashboard-table-content{
+    height: 65%;
+    overflow-y: scroll;
+} */
+/* Alphabets style */
+.alphabet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.7rem;
+}
+.alphabet button{
+    padding: 0.7rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #9EA8B6;
+}
+.alphabet button:hover{
+    color: #ffffff;
+    background-color: #F44848;
+    cursor: pointer;
+}
+.alphabet button.clicked{
+    color: #ffffff;
+    background-color: #F44848;
+}
+.filteralphabet-icons{
+    position: relative;
+}
+.filteralphabet-icons.checkdisplay{
+    .red-filter-icon{
+        opacity: 1;
+    }
+    .black-filter-icon{
+        opacity: 0;
+    }
+}
+.black-filter-icon{
+    position: absolute;
+    left: 0rem;
+}
+.red-filter-icon{
+    opacity: 0;
+}
+
+/* Dashboard-detail */
+/* Delete button style */
+.dashboard-detail{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+    font-family: 'Public Sans', sans-serif;
+}
+.delete-icon{
+    display: flex;
+    gap: 0.3rem;
+}
+#deleteBtn:hover{
+    cursor: pointer;
+}
+.delete-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.delete-icon button{
+    border: none;
+    color: #ffffff;
+    background-color: #F89191;
+    padding: 0.4rem;
+    border-radius: 5px;
+    width: 4rem;
+    font-size: 0.7rem;
+}
+/* Table styling */
+table,thead,tbody{
+    width: 100%;
+    border: 0;
+    border-collapse: collapse;
+}
+thead{
+    text-align: left;
+}
+thead .user{
+    padding-left: 0.6rem;
+}
+#table-employee{
+    width: 100%;
+    border: 0;
+    border-collapse: collapse;
+}
+.user-td{
+    cursor: pointer;
+}
+.user{
+    font-size: 0.7rem;
+    color: #67748D;
+    padding:0.7rem 0;
+    cursor: pointer;
+}
+.user img{
+    height: 0.5rem;
+}
+.dots-td{
+    position: relative;
+    display: inline-block;
+    top: 1rem;
+}
+.dot-option{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 8px 0px;
+    background-color: #fde7e7;
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+    transition: 0.3s;
+    width: 9rem;
+    right: 1rem;
+    font-size: 0.9rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.dot-option li{
+    text-decoration: none;
+    color: rgb(57, 57, 94);
+    line-height: 1.5rem;
+    cursor: pointer;
+}
+.dots-td:hover .dot-option{
+    visibility: visible;
+}
+.dots-icon{
+    height: 1rem;
+}
+.profile-pic img{
+    height: 2rem;
+}
+.check-box{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.check-box-thead{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.name{
+    font-size: 0.8rem;
+}
+.emaill{
+    font-size: 0.7rem;
+    color: #5C6B85;
+}
+.details{
+    padding-right: 1rem;
+    padding: 0.7rem;
+    font-size: 0.8rem;
+}
+.tab1-details-tr{
+    width: 2.3rem;
+}
+.table-row:hover{
+    background-color: #FFF4F4;
+}
+td.details{
+    border-top: 0.002rem solid black;
+    border-top-color:#EAEBEE ;
+}
+.details button{
+    font-size: 0.7rem;
+    border: none;
+    outline: none;
+    padding: 0.4rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    border-radius: 5px;    
+}
+.activeBtn{
+    font-size: 0.7rem;
+    border: none;
+    outline: none;
+    padding: 0.7rem;
+    border-radius: 5px;
+    background-color: #E7F4E8;
+    color: #34896F;
+    width: 4rem;
+}
+.inactiveBtn{
+    font-size: 0.7rem;
+    border: none;
+    outline: none;
+    padding: 0.7rem;
+    border-radius: 5px;
+    background-color: #FBEBEB;
+    color: #F57070;
+    width: 4rem;
+}

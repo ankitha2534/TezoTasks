@@ -1,0 +1,155 @@
+.main{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+}
+
+.side-bar {
+    width: 20%;
+}
+
+.dashboard{
+    width: 80%;
+}
+
+.main-screen{
+    display: none;
+}
+
+.to-do-title {
+    Padding: 3rem;
+}
+
+.to-do-title img {
+    width: 10rem;
+    line-height: 2rem;
+}
+
+.add-task-button {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    gap: 2rem;
+    margin: 1rem 2rem;
+    box-shadow: 0px 0px 20px 0px #0000001A;
+}
+
+.add-task-button button {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: Lexend;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-align: left;
+    color: #251814;
+}
+
+.add-task-button img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.navigation-block{
+    margin-top: 3rem;
+}
+
+.side-bar-navigation {
+    padding: 0.8rem 2rem;
+    gap: 10px;
+    opacity: 0px;
+    font-family: Lexend;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.2rem;
+    text-align: center;
+    margin: 1rem 0rem;
+    cursor: pointer;
+}
+
+.active-link{
+    background-color: #EDB046;
+}
+
+@media (max-width: 768px){
+
+    .side-bar{
+        display: none;
+    }
+
+    .dashboard{
+        display: none;
+    }
+
+    .main-screen{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side-bar-screen{
+        padding: 2rem 2.5rem 2rem 2rem;
+    }
+
+    .header{
+        display: flex;
+        padding: 0.5rem 1rem 0.5rem 0.5rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-right{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .sign-out-button{
+        white-space: nowrap;
+    }
+
+    .add-task-button button{
+        white-space: nowrap;
+    }
+
+    .dropdown-nav{
+        padding: 0.7rem 0.5rem;
+        background-color: #EDB046;
+        margin-left: 2.5rem;
+        margin-right: 2rem;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dropdown-nav select{
+        width: 100%;
+        background-color: #EDB046;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dropdown-nav select option{
+        background-color: #ffffff;
+    }                              
+
+    .to-do-title img {
+        width: 7rem;
+        line-height: 1rem;
+    }
+
+    .add-task-button {
+        padding: 0.2rem 0.5rem;
+        gap: 1rem;
+        margin: 0.5rem 1rem;
+    }
+    
+    .add-task-button button {
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+}

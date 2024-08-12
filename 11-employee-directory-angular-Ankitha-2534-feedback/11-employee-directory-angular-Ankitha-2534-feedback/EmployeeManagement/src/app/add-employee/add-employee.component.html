@@ -1,0 +1,47 @@
+<form id="roleForm">
+    <div class="new-role">Create New Role</div>
+    <div class="doj-location">
+        <div class="emp-info-data">
+            <div class="employee-detail">Role Name</div>
+            <input type="text" placeholder="Create Role" class="input-detail" id="add-new-role" required />
+        </div>
+        <div class="emp-info-data">
+            <div class="employee-detail">Department</div>
+            <select name="Department" class="input-field-select" id="jobDept">
+                <option value="Product Engineer">Product Engineer</option>
+                <option value="Human Resources">Human Resources</option>
+                <option value="Quality Analyst">Quality Analyst</option>
+                <option value="Finance">Finance</option>
+                <option value="Infrastructure & Operations">Infrastructure & Operations</option>
+                <option value="Project Manager">Project Manager</option>
+                <option value="Technical Support">Technical Support</option>
+                <option value="Cyber Security">Cyber Security</option>
+            </select>
+        </div>
+    </div>
+    <div class="employee-detail">Description</div>
+    <textarea class="input-detail1" title="Describe..." rows="7" cols="50" id="description"
+        placeholder="Describe your role and concerns...."></textarea>
+    <div class="emp-info-data">
+        <div class="employee-detail">Location</div>
+        <select name="Location" class="input-field-select" id="location">
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Banglore">Banglore</option>
+            <option value="Chennai">Chennai</option>
+        </select>
+    </div>
+    <div class="emp-info-data">
+        <div class="employee-detail">Assign Employees</div>
+        <div class="select-box">
+            <div class="select-search-role">
+                <input type="text" placeholder="Search for employees" class="search-employee" />
+                <img src="/Images/down-arrow-black.png" alt="dropdown icon" />
+            </div>
+            <div class="options-optioncontainer"></div>
+        </div>
+        <div class="submit-btn">
+            <button value="Cancel" class="btn-1">Cancel</button>
+            <button value="Add Role" class="btn-2" onclick="addRole()" id="addRoleButton">Add Role</button>
+        </div>
+    </div>
+</form>

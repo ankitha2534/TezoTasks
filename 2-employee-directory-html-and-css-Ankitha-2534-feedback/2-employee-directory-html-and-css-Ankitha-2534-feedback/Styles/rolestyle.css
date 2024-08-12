@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.role-employee-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0rem 0.5rem 1rem;
+    align-items: center;
+}
+.role-data-direction{
+    display: flex;
+    gap: 0.2rem;
+    padding: 0.5rem;
+    color: #4C5F71;
+}
+.role-employee-text{
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    color: #8B97A2;
+}
+.add-button{
+    background-color: #F44848;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0.5rem;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    cursor: pointer;
+}
+.add-button button{
+    border: none;
+    outline: none;
+    background-color: #F44848;
+    color: #ffffff;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.role-description{
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+.role-description div{
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+.role-description p{
+    color: #8B97A2;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+.filter-data{
+    background-color: #FDF2F2;
+    border: 1px solid #F44848;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.filter-component-left{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.filter{
+    display: flex;
+    gap: 1%;
+    color: #F44848;
+}
+.location-button select{
+    align-items: center;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    padding: 0.4rem;
+    border-radius: 5px;
+    color: #748096;
+    border: 1px solid #F44848;
+    cursor: pointer;
+}
+.department-button select{
+    align-items: center;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    width: 7rem;
+    padding: 0.4rem;
+    border-radius: 5px;
+    color: #748096;
+    border: 1px solid #F44848;
+    cursor: pointer;
+}
+.filter-component-right{
+    display: flex;
+    gap: 1rem;
+}
+.reset-button{
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 3rem;
+    padding: 0.4rem;
+    border: 1px solid #F44848;
+    cursor: pointer;
+}
+.reset-button button{
+    color:  #F44848;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.apply-button{
+    background-color:#F44848;
+    border-radius: 5px;
+    width: 3rem;
+    padding: 0.4rem;
+    border: 1px solid #F44848;
+    cursor: pointer;
+}
+.apply-button button{
+    color:  #ffffff;
+    background-color:#F44848;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.service{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.customer-service-head{
+    border: 1px solid #c7c8ca;
+    border-radius: 10px;
+    width: 18rem;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.customer-service{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 900;  
+    padding-bottom: 0.7rem; 
+    filter: blur(0.4px); 
+}
+.customer-service img{
+    cursor: pointer;
+}
+.department{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #5e6980;
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+    cursor:context-menu;
+}
+.dept{
+    display: flex;
+    gap: 5%;
+}
+.department1{
+    display: flex;
+    justify-content: flex-end;
+    color: #5e6980;
+    font-size: 0.8rem;
+    padding-top: 0.7rem;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+.dept-employee{
+    position: relative;
+    z-index: 1;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+.profile-image{
+    align-items: center;
+}
+.profile-image img{
+    height: 1rem;
+    display: flex;
+    align-items: center;
+}
+.profile-4{
+    position: absolute;
+    z-index: 2;
+    left: 13rem;
+    top: 0.7rem;
+}
+.profile-2{
+    position: absolute;
+    z-index: 3;
+    left: 13.5rem;
+    top: 0.7rem;
+}
+.profile-3{
+    position: absolute;
+    z-index: 4;
+    left: 14rem;
+    top: 0.7rem;
+}
+.profile-1{
+    position: absolute;
+    z-index: 5;
+    left: 14.5rem;
+    top: 0.7rem;
+}
+.profile-5{
+    position: absolute;
+    z-index: 6;
+    left: 15rem;
+    top: 0.7rem;
+}
+.profile-6{
+    position: absolute;
+    z-index: 7;
+    left: 15.7rem;
+    top: 0.7rem;
+}

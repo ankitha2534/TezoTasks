@@ -1,0 +1,155 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dashboard-container {
+    margin: 0rem 3rem;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.dashboard-header span {
+    font-family: Lexend;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 2.1rem;
+    text-align: left;
+}
+
+.sign-out-container {
+    padding: 0.5rem 0.5rem;
+    border-radius: 8px;
+    background-color: #BA5112;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.sign-out-container button {
+    border: none;
+    outline: none;
+    background: none;
+    color: #ffffff;
+}
+
+.tasks-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.tasks-title {
+    font-family: Lexend;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 2.1rem;
+    text-align: left;
+}
+
+.tasks-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.delete-tasks {
+    font-family: Lexend;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    text-align: left;
+    color: #BA5112;
+}
+
+.task-status {
+    display: flex;
+    gap: 1rem;
+    padding: 1.2rem 1.5rem;
+    width: 36rem;
+    border-radius: 12px;
+    box-shadow: 2px 2px 6px 0px #0000001A;
+    margin-bottom: 1.5rem;
+}
+
+.active-task{
+    background: #ffffff;
+}
+
+.completed-task{
+    background: #EDB046;
+}
+
+@media (max-width: 768px) {
+
+    .dashboard {
+        padding: 0rem 4rem;
+    }
+
+    .dashboard-container {
+        margin: 0rem 0.5rem;
+    }
+
+    .dashboard-header {
+        display: none;
+    }
+
+    .task-status {
+        padding: 0.8rem 1rem;
+        width: 38rem;
+    }
+
+    .task-status img{
+        width: 1.3rem;
+    }
+    
+    .task-action {
+        top: 3.5rem;
+        left: 23rem;
+        padding: 1rem;
+        width: 17rem;
+    }
+    
+    .task-tagline {
+        font-size: 0.8rem;
+        font-weight: 600;
+        line-height: 1rem;
+        padding: 0.5rem 0rem;
+    }
+    
+    .task-added-date {
+        font-size: 0.7rem;
+        font-weight: 400;
+        line-height: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .task-description-header {
+        font-size: 0.7rem;
+        line-height: 1rem;    
+    }
+    
+    .task-description{
+        font-size: 0.7rem;
+    }
+
+    .task-action-icons img{
+        width: 1rem;
+    }
+}

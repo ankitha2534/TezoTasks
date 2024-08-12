@@ -1,0 +1,39 @@
+<div class="sign-in-bg">
+    <form class="sign-in-form" [formGroup]="Credentials">
+        <div class="sign-in-header">
+            <img src="\assets\To-Do App.svg" alt="To-Do App" />
+            <div class="tag-line">Start organizing your life day by day</div>
+        </div>        
+        <div class="validate-input">
+            <div class="input-fields">
+                <input type="text" placeholder="Enter your username" formControlName="UserName"
+                    [(ngModel)]="loginRequest.UserName" name="username" required />
+            </div>
+            <div class="validations"
+                *ngIf="(Credentials.controls.UserName.dirty || Credentials.controls.UserName.touched || isCredentials) && Credentials.controls.UserName.invalid && Credentials.controls.UserName.errors">
+                <div *ngIf="(Credentials.controls.UserName.errors['required'])">
+                    UserName should be unique and required
+                </div>
+            </div>
+        </div>
+        <div class="validate-input">
+            <div class="input-fields">
+                <input [type]="isHide ? 'password' : 'text'" placeholder="Enter your password"
+                    formControlName="Password" [(ngModel)]="loginRequest.Password" name="password" required />
+                <span (click)="hidePassword()">
+                    <i [ngClass]="isHide ? 'fa-solid fa-eye' : 'fa-solid fa-eye-slash'"></i>
+                </span>
+            </div>
+            <div class="validations"
+                *ngIf="(Credentials.controls.Password.dirty || Credentials.controls.Password.touched || isCredentials) && Credentials.controls.Password.invalid && Credentials.controls.Password.errors">
+                <div *ngIf="(Credentials.controls.Password.errors['required'])">
+                    Password is Required
+                </div>
+            </div>
+        </div>
+        <div class="sign-in-button" (click)="onSignIn()"><button type="submit" class="sign-in-submit">Sign In</button>
+        </div>
+        <div class="sign-up-message">Don't have an account? Create <span class="sign-up-link"
+                routerLink="/sign-up">here</span>.</div>
+    </form>
+</div>

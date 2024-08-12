@@ -1,0 +1,183 @@
+<div class="dashboard-content">
+    <div class="employee-content">
+        <div class="employee-block">
+            <div class="employee-main">Employee</div>
+            <div class="employee-sub">Find all of your company's employee accounts and their associated roles</div>
+        </div>
+        <div class="dashboard-buttons">
+            <div class="employee-button">
+                <img src="assets\Interface/Export.svg" alt="Export Icon" />
+                <button>Export</button>
+            </div>
+            <div class="employee-button add-employee-button" (click)="AddEmployee()">
+                <img src="assets\Interface/Add.svg" alt="Add Icon" />
+                <button type="submit">ADD EMPLOYEE</button>
+            </div>
+        </div>
+    </div>
+    <div class="alphabet">    
+        <img src="assets\Interface/filter.svg" alt="filter image"/>
+        <button *ngFor="let letter of alphabet" (click)="FilterByAlphabet($event,letter)">{{ letter }}</button>
+    </div>
+    <div class="filter-tab">
+        <div class="filter-tab-left">
+            <div class="filter">
+                <div>Filter</div>
+                <img src="assets\sort.png" alt="filter-image"/>
+            </div>
+            <div class="filter-component">  
+                <div class="filter-input">
+                    <input type="text" placeholder="Status" (focus)="ShowDropdown()"/>
+                </div>
+                <div class="multiselect-container">                                
+                    <div class="option-container" *ngIf="isVisible">
+                      <div class="option" *ngFor="let i of status">
+                        <input type="checkbox" [value]="i" name="Status"/>
+                        <span>{{i}}</span>
+                      </div>
+                    </div>
+                </div>
+            </div>                        
+            <div class="filter-component">
+                <div class="filter-input">
+                    <input type="text" placeholder="Department"/>
+                </div>
+                <div class="multiselect-container">                                
+                    <div class="option-container">
+                        <div class="option">
+                            <input type="checkbox" value="Product Engineer" name="Department"/>
+                            <option value="Product Engineer">Product Engineer</option>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" value="Human Resources" name="Department"/>
+                            <option value="Human Resources">Human Resources</option>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" value="Quality Analyst" name="Department"/>
+                            <option value="Quality Analyst">Quality Analyst</option>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" value="Finance" name="Department"/>
+                            <option value="Finance">Finance</option>
+                        </div>
+                    </div>
+                </div>
+            </div>                            
+            <div class="filter-component">
+                <div class="filter-input">
+                    <input type="text" placeholder="Location"/>
+                </div>
+                <div class="multiselect-container">                                
+                    <div class="option-container">
+                        <div class="option">
+                            <input type="checkbox" value="Hyderabad" name="Location"/>
+                            <option value="Hyderabad">Hyderabad</option>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" value="Banglore" name="Location"/>
+                            <option value="Banglore">Banglore</option>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" value="Chennai" name="Location"/>
+                            <option value="Chennai">Chennai</option>
+                        </div>
+                    </div>
+                </div>
+            </div>                            
+        </div>
+        
+        <div class="filter-tab-right">
+            <div class="reset-button">
+                <button type="button">Reset</button>
+            </div>
+            <div class="apply-button">
+                <button type="button">Apply</button>
+            </div>
+        </div>
+    </div>   
+    <div class="employee-details">
+        <div class="delete-tab">
+            <div class="delete-button">
+                <img src="assets\Interface/arrow-turn left -down.svg" alt="direction image" />
+                <button type="button">Delete</button>
+            </div>
+            <img src="assets\Interface/table-add.svg" alt="Table icon" class="table-icon" />
+        </div>
+        <table>
+            <thead>
+                <tr class='table-head'>
+                    <th class='check-box'>
+                        <input type='checkbox' />
+                    </th>
+                    <th class='user-td user'>
+                        User
+                        <img src='assets\chevron.png' alt='Nav icon' style='width:1rem' />
+                    </th>
+                    <th class='user-td user'>
+                        Location
+                        <img src='assets\chevron.png' alt='Nav icon' style='width:1rem' />
+                    </th>
+                    <th class='user-td user'>
+                        Department
+                        <img src='assets\chevron.png' alt='Nav icon' style='width:1rem' />
+                    </th>
+                    <th class='user-td user'>
+                        Role
+                        <img src='assets\chevron.png' alt='Nav icon' style='width:1rem' />
+                    </th>
+                    <th class='user-td user'>
+                        EmpNo
+                        <img src='assets\chevron.png' alt='Nav icon' style='width:1rem' />
+                    </th>
+                    <th class='user-td user'>
+                        Status
+                        <img src='assets\chevron.png' alt='Nav icon' style='width:1rem' />
+                    </th>
+                    <th class='user-td user'>
+                        JoinDt
+                        <img src='assets\chevron.png' alt='Nav icon' style='width:1rem' />
+                    </th>
+                    <th>
+                        <img src='assets\dots.png' alt='Dots icon' style='width:1rem' />
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tableEmployee">
+                <tr *ngFor="let employee of employees" class='table-row'>
+                    <td class='check-box'>
+                        <input type='checkbox' />
+                    </td>
+                    <td class='user-td details'>
+                        {{ employee.firstName  }} {{ employee.lastName  }}<br/>{{ employee.email }}
+                    </td>
+                    <td class='user-td details'>
+                        {{ employee.location }}
+                    </td>
+                    <td class='user-td details'>
+                        {{ employee.department }}
+                    </td>
+                    <td class='user-td details'>
+                        {{ employee.jobTitle }}
+                    </td>
+                    <td class='user-td details'>
+                        {{ employee.uid }}
+                    </td>
+                    <td class='user-td details'>
+                        <!-- {{ employee.status }} -->
+                        <button class="active">Active</button>
+                    </td>
+                    <td class='user-td details'>
+                        {{ employee.joinDate | date: 'dd/MM/yyyy' }}
+                    </td>
+                    <td class='dots-td'>
+                        <img src='assets\dots.png' alt='Dots icon' class='dots-icon' />
+                        <ul class='dot-option'>
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">Delete</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

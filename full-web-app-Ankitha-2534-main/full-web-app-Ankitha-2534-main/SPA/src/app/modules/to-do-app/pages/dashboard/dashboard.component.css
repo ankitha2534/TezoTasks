@@ -1,0 +1,145 @@
+.tasks-section-screen {
+    display: none;
+}
+
+.tasks-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.content-section {
+    position: relative;
+    height: 14.5rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 10px 0px #0000001A;
+    margin-bottom: 4rem;
+}
+
+.greeting-section{
+    padding: 2rem 0rem 0rem 4rem;
+}
+
+.greeting-message {
+    font-family: Lexend;
+    font-size: 1.8rem;
+    font-weight: 1000;
+    line-height: 4.5rem;
+    text-align: left;
+}
+
+.greeting-prompt {
+    font-family: Lexend;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+}
+
+.content-section img {
+    position: absolute;
+    width: 14rem;
+    height: 13rem;
+    top: 4rem;
+    left: 37rem;
+}
+
+.task-progress {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.progress-item {
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.progress-percentage {
+    font-family: Lexend;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.progress-label {
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.completed {
+    background-color: #BA5112;
+}
+
+.active {
+    background-color: #EDB046;
+}
+
+.delete-tasks{
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .tasks-section {
+        display: none;
+    }
+
+    .tasks-section-screen{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .task-progress {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+    }
+
+    .content-section {
+        position: relative;
+        width: 100%;
+        height: 11.5rem;
+        border-radius: 1rem;
+        opacity: 0px;
+        box-shadow: 2px 2px 10px 0px #0000001A;
+        margin-bottom: 3.5rem;
+    }
+
+    .greeting-section {
+        position: absolute;
+        top: 2.4rem;
+        left: 2rem;
+        gap: 0.7rem;
+        opacity: 0px;
+    }
+
+    .greeting-message {
+        font-size: 1.5rem;
+    }
+
+    .content-section img {
+        position: absolute;
+        width: 11rem;
+        height: 10rem;
+        top: 4rem;
+        left: 25rem;
+    }
+
+    .progress-item{
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+        width: 14rem;
+    }
+
+}

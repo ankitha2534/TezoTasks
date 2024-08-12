@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700&display=swap');
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: 'Public Sans', sans-serif;
+}
+/* Whole web-page */
+
+.page-component{
+    display: flex;
+    gap: 2rem;
+    /* align-items: center; */
+}
+.page-component img{
+    height: 2rem;
+}
+/* Side panel */
+.side-panel{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.data-field{
+    flex-grow: 1;
+}
+.head-field{
+    color: #bbbbbe;
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+.tezo-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;    
+}
+.access-field{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    gap: 0.3rem; 
+    color: #878889;
+}
+.role-data{
+    display: flex;
+    align-items: center;     
+    justify-content: space-between;
+}
+.access-field a{
+    text-decoration: none;
+    color: #878889;
+}
+.employee-block{
+    background-color: #FDE9E9;
+    border-radius: 5px;
+}
+.update-install{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #FEF6F6;
+    padding: 0.5rem;
+    /* position: fixed;
+    bottom: 0; */
+    width: 16rem;
+    margin: 0rem 0.5rem;
+    padding: 1rem;
+}
+.update-install p{
+    color: #F55252;
+}
+.update-install span{
+    color: #B8B8B8;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+}
+.accept-dismiss{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.7rem;
+}
+.accept{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #FDE6E6;
+    text-align: center;
+    border: none;
+    color: #F67070;
+    border-radius: 7px;
+    padding: 0.7rem 1.4rem;
+}
+.accept:hover{
+    background-color: #F44848;
+    color: #ffffff;
+    cursor: pointer;
+}
+.accept-dismiss{
+    display: flex;
+}
+/* Dashboard */
+/* Dashboard search bar */
+.dashboard-search{
+    width: 80%;
+    margin-top: 0.5rem;
+}
+.search-bar-row{
+    display: flex;
+    height: 4rem;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.search-bar img{
+    height: 1.2rem;
+}
+.search-bar input{
+    border: none;
+    outline: none;
+    width: 40rem;
+}
+.search-profile-icons{
+    display: flex;
+    align-items: center;
+}
+.search-profile{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.profile-img{
+    height: 2rem;
+}
+.search-profile-name{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.search-profile-name img{
+    height: 1rem;
+}
+.jhon{
+    display: block;
+}
+.admin{
+    font-weight: 700;
+}
+/* Form styling */
+.formdata{
+    padding-left: 2rem;
+}
+.formdata-main{
+    display: flex;
+    /* align-items: center; */
+    gap: 2rem;
+}
+.add-employee{
+    padding: 2rem 0rem;
+    font-size: 1.2rem;
+}
+.profile-pic-data{
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+.profile-pic-data div{
+    padding: 1.8rem;
+}
+.profile-pic-data img{
+    height: 6rem;
+}
+.info{
+    padding: 0rem 0rem 1.5rem 0rem;
+    font-size: 1rem;
+}
+.emp-number{
+    margin-bottom: 1.5rem;
+}
+.employee-detail{
+    color: #6B707D;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+.input-detail{
+    height: 1.9rem;
+    width: 15rem;
+    padding: 0.2rem;
+    border: 2px solid #DFE1E6;
+    outline-color: #4C9AFF;
+    border-radius: 3px;
+}
+.dob-input{
+    padding-left: 25px;
+    background: url("/Images/calendar.png") no-repeat left;
+    background-position: 5px 4px;
+    background-size: 15px;
+}
+.name-dob{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.location-select{
+    border: none;
+    outline: none;
+    width: 17rem;
+    height: 1.7rem;
+    background-color: #F4F5F7;
+    border-radius: 5px;
+}
+.emp-info-data input{
+    width: 17rem;
+}
+.job-description{
+    color: #818D9F;
+}
+.submit-btn{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+}
+.submit-btn button{
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.btn-1{
+    background-color: #FBEBEB;
+    color: #F67171;
+    cursor: pointer;
+}
+.btn-2{
+    background-color: #F44848;
+    color: #ffffff;
+    cursor: pointer;
+}

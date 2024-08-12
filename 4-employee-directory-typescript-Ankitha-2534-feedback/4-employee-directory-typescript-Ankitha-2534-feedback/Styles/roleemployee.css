@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.role-employee-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0rem 0.5rem 1rem;
+    align-items: center;
+}
+.role-employee-row a{
+    text-decoration: none;
+}
+.role-data-direction{
+    display: flex;
+    gap: 0.2rem;
+    padding: 0.5rem;
+    color: #4C5F71;
+}
+.role-employee-text{
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    color: #8B97A2;
+}
+.add-button{
+    background-color: #F44848;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.add-button button{
+    border: none;
+    outline: none;
+    background-color: #F44848;
+    color: #ffffff;
+    font-size: 0.7rem;
+}
+.role-description{
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+.role-description div{
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+.role-description p{
+    color: #8B97A2;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+.detail-of-employee{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 23rem;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+.person-profile{
+    border: 1px solid #8B97A2;
+    padding:1rem;
+    padding-top: 2rem;
+    border-radius: 5px;
+    width: 18.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    height: fit-content;
+}
+.person-details{
+    display: flex;   
+    gap: 0.7rem;
+    padding-bottom: 1rem;
+}
+.person-details img{
+    height: 2rem;
+}
+.person-name{
+    color: #404040;
+    font-size: 1rem;
+    padding: 0.2rem;
+}
+.person-role{
+    color: #606060;
+    font-size: 0.8rem;
+}
+.person-work-details{
+    display: flex;
+    gap: 0.7rem;
+    padding: 0.2rem;
+    font-size: 0.7rem;
+    color: #404040;
+    align-items: center;
+}
+.view-person{
+    display: flex;
+    gap: 0.7rem;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+    color: #404040;
+    align-items: center;
+    justify-content: flex-end;
+}

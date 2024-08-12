@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700&display=swap');
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: 'Public Sans', sans-serif;
+}
+
+/* Form styling */
+.formdata{
+    padding-left: 2rem;
+}
+.add-employee{
+    padding: 2rem 0rem;
+    font-size: 1.2rem;
+}
+.profile-pic-data{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.profile-pic-data img{
+    height: 6rem;
+}
+.profile-pic-data button{
+    padding: 0.5rem 0.8rem;
+    color: white;
+    background-color: #F44848;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.profile-pic-data button input{
+    display: none;
+}
+#fileProfileImage{
+    border-radius: 50%;
+    height: 7rem;
+}
+.info{
+    padding: 0rem 0rem 1.5rem 0rem;
+    font-size: 1rem;
+}
+.emp-number{
+    margin-bottom: 1.5rem;
+}
+.employee-detail{
+    color: #6B707D;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+.input-detail{
+    height: 1.9rem;
+    width: 15rem;
+    padding: 0.2rem;
+    border: 2px solid #DFE1E6;
+    outline-color: #4C9AFF;
+    border-radius: 3px;
+}
+#field-required1{
+    color: #ffffff;
+}
+#field-required2{
+    color: #ffffff;
+}
+#field-required3{
+    color: #ffffff;
+}
+#field-required4{
+    color: #ffffff;
+}
+#field-required5{
+    color: #ffffff;
+}
+#field-required6{
+    color: #ffffff;
+}
+#field-required1.active{
+    color: #F44848;
+    font-size: 0.7rem;
+}
+#field-required2.active{
+    color: #F44848;
+    font-size: 0.7rem;
+}
+#field-required3.active{
+    color: #F44848;
+    font-size: 0.7rem;
+}
+#field-required4.active{
+    color: #F44848;
+    font-size: 0.7rem;
+}
+#field-required5.active{
+    color: #F44848;
+    font-size: 0.7rem;
+}
+#field-required6.active{
+    color: #F44848;
+    font-size: 0.7rem;
+}
+.required-detail.active{
+    border: 2px solid #F44848;
+}
+/* .dob-input {
+    padding-left: 25px;
+    background: url("/Images/calendar.png") no-repeat left;
+    appearance: none;
+    padding-right: 5px;
+    background-position: 5px center;
+    background-size: 15px;
+} */
+.name-dob{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.location-select{
+    border: none;
+    outline: none;
+    width: 17rem;
+    height: 1.7rem;
+    background-color: #F4F5F7;
+    border-radius: 5px;
+}
+.emp-info-data input{
+    width: 17rem;
+}
+.job-description{
+    color: #818D9F;
+}
+.submit-btn{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+}
+.submit-btn button{
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.btn-1{
+    background-color: #FBEBEB;
+    color: #F67171;
+    cursor: pointer;
+}
+.btn-2{
+    background-color: #F44848;
+    color: #ffffff;
+    cursor: pointer;
+}
+.btn-3{
+    background-color: #F44848;
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+}
+/* Alert box for adding new employee */
+
+#employee-form{
+    position: relative;
+    z-index: 0;
+}
+.alert-box-added{
+    top: 15rem;
+    left: 33rem;
+    display: none;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 3rem;
+    background-color: white;
+    transition: 2s ease-out;
+}

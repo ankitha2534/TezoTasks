@@ -1,0 +1,12 @@
+<div class="add-task-wrapper" [ngClass]="{'open':showModal}">
+    <div class="add-task-container">
+        <div class="add-task-details">
+            <input type="text" placeholder="Add Title" class="title" [(ngModel)]="taskView.taskTitle"/>
+            <textarea placeholder="Add Description" class="description" [(ngModel)]="taskView.taskDescription"></textarea>
+        </div>
+        <div class="add-task-buttons">
+            <div class="cancel"  (click)="closeModal()"><button type="button">Cancel</button></div>
+            <div class="save" (click)="onSave()"><button type="button">Save</button></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Employee Page</title>
+    <link rel="stylesheet" href="/Styles/commonstyle.css" />
+    <link rel="stylesheet" href="/Styles/rolestyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <div class="component">
+        <div class="sidePanel" id="sidePanel1">
+            <div class="side-panel-top">
+                <div class="tezo-logo">
+                    <img src="/Images/TezoLogo.svg" alt="Tezo_Logo" />
+                </div>
+                <div class="sidepanel-detail">
+                    <div class="main-heading">
+                        <img src="/Images/minus.png" alt="Hyphen Image" />
+                        <div>ALL</div>
+                    </div>
+                    <a href="index.html" title="Dashboard">
+                        <div class="sidepanel-content">
+                            <div class="sidepanel-text">
+                                <div class="red-black-icon">
+                                    <img src="/Images/Horizontal nav/Dashboard.svg" alt="Lock_icon" class="black-img" />
+                                    <img src="/Images/dashboard_red.svg" alt="Lock_icon" class="red-img" />
+                                </div>
+                                <div class="heading-text">Dashboard</div>
+                            </div>
+                            <div class="arrow-icon">
+                                <img src="/Images/next.png" alt="DropdownIcon"
+                                    class="dropdown-icon heading-text black-img" />
+                                <img src="/Images/rightarrow.png" alt="DropdownIcon"
+                                    class="dropdown-icon heading-text red-img" />
+                            </div>
+                        </div>
+                    </a>
+                    <a href="employee.html" title="Employees">
+                        <div class="employee-block">
+                            <div class="sidepanel-content">
+                                <div class="sidepanel-text">
+                                    <div class="red-black-icon">
+                                        <img src="/Images/employees_black.svg" alt="Lock_icon" class="black-img" />
+                                        <img src="/Images/Horizontal nav/Employees.svg" alt="Lock_icon"
+                                            class="red-img" />
+                                    </div>
+                                    <div class="heading-text">Employees</div>
+                                </div>
+                                <div class="arrow-icon">
+                                    <img src="/Images/next.png" alt="DropdownIcon"
+                                        class="dropdown-icon heading-text black-img" />
+                                    <img src="/Images/rightarrow.png" alt="DropdownIcon"
+                                        class="dropdown-icon heading-text red-img" />
+                                </div>
+                            </div>
+                            <!-- <div class="content-list heading-text employee-content-list">
+                                <li><a href="#" title="All">All</a></li>
+                                <li><a href="#" title="Active">Active</a></li>
+                                <li><a href="#" title="In Active">In Active</a></li>
+                            </div> -->
+                        </div>
+                    </a>
+                    <div class="main-heading">
+                        <img src="/Images/minus.png" alt="Hyphen Image" />
+                        <div>ROLE / USER MANAGEMENT</div>
+                    </div>
+                    <!-- <a href="role.html" title="User Mgmt Roles"> -->
+                    <div class="sidepanel-content-highlight">
+                        <div class="sidepanel-text">
+                            <div class="red-black-icon">
+                                <img src="/Images/Horizontal nav/Roles.svg" alt="Lock_icon" class="black-img" />
+                                <img src="/Images/roles_red.svg" alt="Lock_icon" class="red-img" />
+                            </div>
+                            <div class="heading-text">Roles</div>
+                        </div>
+                        <div class="arrow-icon">
+                            <img src="/Images/next.png" alt="DropdownIcon"
+                                class="dropdown-icon heading-text black-img" />
+                            <img src="/Images/rightarrow.png" alt="DropdownIcon"
+                                class="dropdown-icon heading-text red-img" />
+                        </div>
+                    </div>
+                    <!-- </a> -->
+                    <div class="sidepanel-content">
+                        <div class="sidepanel-text">
+                            <div class="red-black-icon">
+                                <img src="/Images/Horizontal nav/assign user.svg" alt="Lock_icon" class="black-img" />
+                                <img src="/Images/assignuser_red.svg" alt="Lock_icon" class="red-img" />
+                            </div>
+                            <div class="heading-text">Assign User Roles</div>
+                        </div>
+                        <div class="arrow-icon">
+                            <img src="/Images/next.png" alt="DropdownIcon"
+                                class="dropdown-icon heading-text black-img" />
+                            <img src="/Images/rightarrow.png" alt="DropdownIcon"
+                                class="dropdown-icon heading-text red-img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="update-install">
+                <p class="head-text">Install new update 2.3.1A</p>
+                <p class="sub-text">Allow to launch new update for the AD application</p>
+                <div class="update-button">
+                    <button class="update-button-1">Dismiss</button>
+                    <button class="update-button-1">Accept</button>
+                </div>
+            </div>
+        </div>
+        <div class="side-handle-icon">
+            <img src="/Images/handle.png" alt="Scroll" id="sideBar" class="side-bar1" onclick="sideBarFunction()" />
+        </div>
+        <div class="dashboard" id="dashBoard1">
+            <header>
+                <div class="searchBar">
+                    <img src="/Images/bx-search.png" alt="Search_icon" />
+                    <input type="text" placeholder="Search" />
+                </div>
+                <div class="iconsOfSearch">
+                    <div id="iconsOfSearchImages">
+                        <span id="iconsOfSearch1"><img src="/Images/Vertical Navbar/Language.svg"
+                                alt="Language" /></span>
+                        <span id="iconsOfSearch1"><img src="/Images/Vertical Navbar/Categories.svg"
+                                alt="Categories_icon" /></span>
+                        <span id="iconsOfSearch1"><img src="/Images/Vertical Navbar/Mode.svg" alt="Mode_icon" /></span>
+                        <span id="iconsOfSearch1"><img src="/Images/Vertical Navbar/Notifications.svg"
+                                alt="Notification_icon" /></span>
+                    </div>
+                    <div class="profile_data" id="iconsOfSearch1">
+                        <img src="/Images/emp9.png" alt="ProfileImage" />
+                        <div class="select-profile-search">
+                            <span>Jhon Abraham</span><br>
+                            <select name="Profile" class="john-profile1" title="John Profile">
+                                <option value="Admin">Admin</option>
+                                <option value="Accounts">Accounts</option>
+                                <option value="Settings">Settings</option>
+                                <option value="Help">Help</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="role-employee-row">
+                <div>
+                    <!--  class="role-data" -->
+                    <div class="role-data-direction">
+                        <div>Role</div>
+                    </div>
+                    <div class="role-employee-text">All the roles are configured here</div>
+                </div>
+                <a href="addrole.html" class="add-role-button">
+                    <div class="add-button">
+                        <img src="/Images/Interface/Add.svg" alt="Add Icon" />
+                        <button>ADD ROLE</button>
+                    </div>
+                </a>
+            </div>
+            <div class="filter-data" id="filterDataCategory">
+                <div class="filter-component-left">
+                    <div class="filter">
+                        <div>Filter</div>
+                        <img src="/Images/sort.png" alt="filter-image"/>
+                    </div>                       
+                    <div class="status-button">
+                        <div class="select-search">
+                            <input type="text" placeholder="Department"  class="search-employee2"/>
+                            <img src="/Images/down-arrow-black.png" alt="dropdown icon" id="dropdownImg2"/>
+                        </div>
+                        <div class="select-box">                                
+                            <div class="option-container2 option-checkboxes">
+                                <div class="option" onclick="onCheckRole(this,event)">
+                                    <input type="checkbox" class="check-box2" value="Product Engineer" name="Department"/>
+                                    <option value="Product Engineer">Product Engineer</option>
+                                </div>
+                                <div class="option" onclick="onCheckRole(this,event)">
+                                    <input type="checkbox"  class="check-box2" value="Human Resources" name="Department"/>
+                                    <option value="Human Resources">Human Resources</option>
+                                </div>
+                                <div class="option" onclick="onCheckRole(this,event)">
+                                    <input type="checkbox"  class="check-box2" value="Quality Analyst" name="Department"/>
+                                    <option value="Quality Analyst">Quality Analyst</option>
+                                </div>
+                                <div class="option" onclick="onCheckRole(this,event)">
+                                    <input type="checkbox"  class="check-box2" value="Finance" name="Department"/>
+                                    <option value="Finance">Finance</option>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                            
+                    <div class="status-button">
+                        <div class="select-search">
+                            <input type="text" placeholder="Location"  class="search-employee3"/>
+                            <img src="/Images/down-arrow-black.png" alt="dropdown icon" id="dropdownImg3"/>
+                        </div>
+                        <div class="select-box">                                
+                            <div class="option-container3 option-checkboxes">
+                                <div class="option" onclick="onCheckRole(this,event)">
+                                    <input type="checkbox"  class="check-box3" value="Hyderabad" name="Location"/>
+                                    <option value="Hyderabad">Hyderabad</option>
+                                </div>
+                                <div class="option" onclick="onCheckRole(this,event)">
+                                    <input type="checkbox"  class="check-box3" value="Banglore" name="Location"/>
+                                    <option value="Banglore">Banglore</option>
+                                </div>
+                                <div class="option" onclick="onCheckRole(this,event)">
+                                    <input type="checkbox"  class="check-box3" value="Chennai" name="Location"/>
+                                    <option value="Chennai">Chennai</option>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                            
+                </div>
+                <div class="filter-component-right">
+                    <div class="reset-button">
+                        <button onclick="displayResetRole()">Reset</button>
+                    </div>
+                    <div class="apply-button">
+                        <button type="button" onclick="displayResultRole()">Apply</button>
+                    </div>
+                </div>
+            </div>
+            <div id="service">
+            </div>
+        </div>
+    </div>
+
+    <script src="/Javascript/commonjs.js"></script>
+    <script src="/Javascript/rolejs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+.task-status {
+    position: relative;
+    width: 50rem;
+}
+
+.task-action {
+    position: absolute;
+    top: 4rem;
+    left: 30rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background: #EDB046;
+    width: 21rem;
+    box-shadow: 2px 2px 10px 0px #0000001A;
+    z-index: 1; 
+}
+
+.task-tagline {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    padding: 1rem 0rem;
+}
+
+.task-added-date {
+    font-family: Lexend;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 0.5rem;
+    text-align: left;
+    color: #BA5112;
+    margin-bottom: 1rem;
+}
+
+.task-description-header {
+    font-family: Lexend;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+    text-align: left;
+    color: #251814;
+
+}
+
+.task-description{
+    font-family: Lexend;
+    font-size: 0.9rem;
+}
+
+.task-content{
+    margin-bottom: 2rem;
+}
+
+.task-action-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-action-icons img{
+    width: 1rem;
+}

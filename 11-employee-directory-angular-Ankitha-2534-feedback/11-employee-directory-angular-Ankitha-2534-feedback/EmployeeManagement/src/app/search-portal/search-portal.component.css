@@ -1,0 +1,40 @@
+header{
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 7px;
+}
+
+.search-bar{
+    display: flex;
+    gap: 0.5rem;
+}
+.search-bar input{
+    border: none;
+    outline: none;
+}
+.search-bar img{
+    padding: 0 0.5rem;
+    height: 1rem;
+}
+.person-details span{
+    font-size: 0.8rem;
+    padding: 1rem;
+}
+.search-icons{
+    display: flex;
+}
+.person-profile{
+    display: flex;
+}
+.person-profile img{
+    width: 2rem;
+    height: 2rem;
+}
+.select-menu{
+    border: none;
+    padding: 0.2rem 1rem;
+}

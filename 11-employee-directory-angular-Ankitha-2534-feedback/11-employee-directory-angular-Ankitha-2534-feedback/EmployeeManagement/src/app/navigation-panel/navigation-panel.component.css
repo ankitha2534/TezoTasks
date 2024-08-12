@@ -1,0 +1,117 @@
+.navigation-panel{
+    position: relative;
+}
+
+/* Tezo-logo */
+.tezo-logo{
+    padding: 1rem 1.5rem;
+}
+.tezo-logo img{
+    width: 5.5rem;
+}
+
+/* Menu-options */
+.navigation-container{
+    flex: 1;
+}
+/* Navigation-header */
+.navigation-header{
+    display: flex;
+    gap: 0.7rem;
+    margin-top: 1rem;
+}
+.navigation-header div{
+    color: #bbbbbe;
+    font-size: 0.7rem;
+    align-items: center;
+}
+/* Navigation-content */
+.navigation-subitem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigation-subitem-content{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1.5rem;
+}
+.navigation-subitem-text{
+    font-size: 0.8rem;
+    color: #383737;
+}
+/* Icons */
+.red-black-icon{
+    position: relative;
+}
+.red-img{
+    position: absolute;
+    left: 0rem;
+    opacity: 0;
+}
+.arrow-red-img{
+    position: absolute;
+    left: 15rem;
+    /* bottom: 0; */
+    opacity: 0;
+}
+/* Hover effect */
+.navigation-subitem:hover{
+    .black-img{
+        opacity: 0;
+    }
+    .red-img{
+        opacity: 1;
+    }
+    .navigation-subitem-text{
+        color: #F44848;
+    }
+    .arrow-red-img{
+        opacity: 1;
+    }
+    .arrow-black-img{
+        opacity: 0;
+    }
+}
+
+/* Navigation Prompt */
+.navigation-prompt{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #FEF6F6;
+    padding: 1rem;
+    /* position: absolute;
+    bottom: 0; */
+    flex: 1;
+    width: 16rem;
+}
+.navigation-prompt div{
+    line-height: 1.5rem;
+}
+.navigation-prompt-header{
+    color: #F55252;
+}
+.navigation-prompt-content{
+    color: #B8B8B8;
+    font-size: 0.8rem;
+}
+.navigation-prompt-buttons{
+    display: flex;
+    gap: 0.5rem;    
+}
+.navigation-prompt-buttons button{
+    padding: 0.5rem 0.7rem;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    color: #F67070;
+    text-align: center;
+    background-color: #FDE6E6;
+}
+.navigation-prompt-buttons button:hover{
+    background-color: #F44848;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+

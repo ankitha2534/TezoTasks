@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADD EMPLOYEE</title>
+    <link rel="stylesheet" href="editaddstyle.css" />
+</head>
+
+<body>
+    <div class="page-component">
+        <div class="side-panel">
+            <div class="tezo-logo">
+                <img src="/Images/TezoLogo.svg" alt="Tezo Logo" />
+                <img src="/Images/handle.png" alt="handle icon" />
+            </div>
+            <div class="data-field">
+                <p class="head-field">ALL</p>
+                <div class="all-field">
+                    <div class="access-field">
+                        <img src="/Images/Horizontal nav/Dashboard.svg" alt="Dashboard icon" />
+                        <span><a href="#" title="Dashboard">Dashboard</a></span>
+                    </div>
+                    <div class="access-field employee-block">
+                        <img src="/Images/Horizontal nav/Employees.svg" alt="Employee icon" />
+                        <span><a href="#" title="Employee">Employee</a></span>
+                    </div>
+                </div>
+                <p class="head-field">ROLE / USER MANAGEMENT</p>
+                <div class="all-field">
+                    <div class="role-data">
+                        <div class="access-field">
+                            <img src="/Images/Horizontal nav/Roles.svg" alt="Role icon" />
+                            <span><a href="#" title="Role">Roles</a></span>
+                        </div>
+                        <img src="/Images/next.png" alt="Right Arrow" />
+                    </div>
+                    <div class="role-data">
+                        <div class="access-field">
+                            <img src="/Images/Horizontal nav/assign user.svg" alt="Access icon" />
+                            <span><a href="#" title="Access Right">Access Rights</a></span>
+                        </div>
+                        <img src="/Images/next.png" alt="Right Arrow" />
+                    </div>
+                </div>
+            </div>
+            <div class="update-install">
+                <p>Install new update 2.3.1A</p>
+                <span>Allow to launch the new update for the AD application.</span>
+                <div class="accept-dismiss">
+                    <button class="accept">Dismiss</button>
+                    <button class="accept">Accept</button>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-search">
+            <header>
+                <div class="search-bar-row">
+                    <div class="search-bar">
+                        <img src="/Images/bx-search.png" alt="Search icon" />
+                        <input type="text" placeholder="Search(Ctrl+l)" />
+                    </div>
+                    <div class="search-profile-icons">
+                        <img src="/Images/Vertical Navbar/Language.svg" alt="Language" />
+                        <img src="/Images/Vertical Navbar/Categories.svg" alt="Categories" />
+                        <img src="/Images/Vertical Navbar/Mode.svg" alt="Mode" />
+                        <img src="/Images/Vertical Navbar/Notifications.svg" alt="Notification" />
+                        <div class="search-profile">
+                            <img src="/Images/profile.png" alt="profile" class="profile-img" />
+                            <div class="search-profile-name">
+                                <div class="name-data">
+                                    <span class="jhon">Jhon Abraham</span>
+                                    <span class="admin">Admin</span>
+                                </div>
+                                <img src="/Images/down-arrow-black.png" alt="Drop down arrow" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="formdata">
+                <form>
+                    <div class="add-employee">Add Employee</div>
+                    <div class="formdata-main">
+                        <div class="profile-pic-data">
+                            <img src="/Images/profile-user.png" alt="Add your Image" />
+                            <div>Edit</div>
+                        </div>
+                        <div class="edit-fields">
+                            <div class="info">Personal Information</div>
+                            <div class="emp-number">
+                                <div class="employee-detail">Emp No</div>
+                                <input type="text" placeholder="Text" class="input-detail" required />
+                            </div>
+                            <div class="name-dob">
+                                <div>
+                                    <div class="employee-detail">First Name</div>
+                                    <input type="text" placeholder="Text" class="input-detail" required />
+                                </div>
+                                <div>
+                                    <div class="employee-detail">Last Name</div>
+                                    <input type="text" placeholder="Text" class="input-detail" required />
+                                </div>
+                                <div>
+                                    <div class="employee-detail">Date Of Birth</div>
+                                    <input type="text" placeholder="Text" class="input-detail dob-input" required />
+                                </div>
+                            </div>
+                            <div class="name-dob">
+                                <div>
+                                    <div class="employee-detail">Email Id</div>
+                                    <input type="email" placeholder="Joe.j@technovert.com" class="input-detail"
+                                        required />
+                                </div>
+                                <div>
+                                    <div class="employee-detail">Mobile Number</div>
+                                    <input type="number" placeholder="0000000000" class="input-detail" required />
+                                </div>
+                            </div>
+                            <div class="info">Employment Information</div>
+                            <div class="name-dob">
+                                <div class="emp-info-data">
+                                    <div class="employee-detail">Joining Date</div>
+                                    <input type="email" placeholder="12/08/2023" class="input-detail" required />
+                                </div>
+                                <div class="emp-info-data">
+                                    <div class="employee-detail">Location</div>
+                                    <select name="Location" class="location-select">
+                                        <option value="Hyderabad">Hyderabad</option>
+                                        <option value="Banglore">Banglore</option>
+                                        <option value="Chennai">Chennai</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="name-dob">
+                                <div class="emp-info-data">
+                                    <div class="employee-detail">Job Title</div>
+                                    <select name="Job-title" class="location-select">
+                                        <option value="UX Designer">UX Designer</option>
+                                        <option value="Full Stack Developer">Full Stack Developer</option>
+                                        <option value="Quality Analyst">Quality Analyst</option>
+                                    </select>
+                                </div>
+                                <div class="emp-info-data">
+                                    <div class="employee-detail">Department</div>
+                                    <select name="Department" class="location-select">
+                                        <option value="UI/UX">UI/UX</option>
+                                        <option value="Product Engineer">Product Engineer</option>
+                                        <option value="Testing">Testing</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="name-dob">
+                                <div class="emp-info-data">
+                                    <div class="employee-detail">Assign Manager</div>
+                                    <select name="Job-title" class="location-select job-description">
+                                        <option value="Search">Search</option>
+                                    </select>
+                                </div>
+                                <div class="emp-info-data">
+                                    <div class="employee-detail">Assign Project</div>
+                                    <select name="Department" class="location-select job-description">
+                                        <option value="Search">Search</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="submit-btn">
+                                <button value="Cancel" class="btn-1">Cancel</button>
+                                <button value="Add Employee" class="btn-2">Add Employee</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

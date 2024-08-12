@@ -1,0 +1,89 @@
+<div class="dashboard">
+    <div class="dashboard-header">
+        <span class="dashboard-title">Dashboard</span>
+        <div class="sign-out-container" (click)="signOut()">
+            <button type="button" class="sign-out-button">Sign Out</button>
+            <img src="\assets\mdi_logout.svg" alt="LogOut Icon" class="sign-out-icon" />
+        </div>
+    </div>
+    <div class="dashboard-container">
+        <div class="content-section">
+            <div class="greeting-section">
+                <div class="greeting-message">Hello, {{name}}!</div>
+                <div class="greeting-prompt">What do you want to do today?</div>
+            </div>
+            <img src="\assets\woman.svg" alt="Young smiling woman working at laptop" class="greeting-image" />
+        </div>
+        <div class="tasks-section">
+            <div class="tasks-header">
+                <div class="tasks-title">Today's Tasks</div>
+                <div class="tasks-controls">
+                    <div class="delete-tasks" (click)="deleteAll()">Delete All</div>
+                    <div class="current-date">{{currentDate | date:'fullDate'}}</div>
+                </div>
+            </div>
+            <div class="tasks-list">
+                <div class="task-item">
+                    <div *ngFor="let task of tasks">
+                        <div class="task-status" [class.active-task]="!task.isDone" [class.completed-task]="task.isDone">
+                            <img [src]="task.isDone ? '/assets/material-symbols_check-box.svg' : '/assets/material-symbols_check-box-outline.svg'"
+                                alt="Check box" class="task-checkbox" />
+                            <div class="task-title">{{ task.taskTitle }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="task-progress">
+                    <div class="progress-item completed">
+                        <img src="\assets\Mask group.svg" alt="Completed tasks percentage" class="progress-icon" />
+                        <div class="progress-percentage">{{completedPercentage}}%</div>
+                        <div class="progress-label">Completed tasks</div>
+                    </div>
+                    <div class="progress-item active">
+                        <img src="\assets\Mask group active.svg" alt="Active tasks percentage" class="progress-icon" />
+                        <div class="progress-percentage">{{activePercentage}}%</div>
+                        <div class="progress-label">Active tasks</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tasks-section-screen">
+            <div class="task-progress">
+                <div class="progress-item completed">
+                    <img src="\assets\Mask group.svg" alt="Completed tasks percentage" class="progress-icon" />
+                    <div>
+                        <div class="progress-percentage">{{completedPercentage}}%</div>
+                        <div class="progress-label">Completed tasks</div>
+                    </div>
+                </div>
+                <div class="progress-item active">
+                    <img src="\assets\Mask group active.svg" alt="Active tasks percentage" class="progress-icon" />
+                    <div>
+                        <div class="progress-percentage">{{activePercentage}}%</div>
+                        <div class="progress-label">Active tasks</div>
+                    </div>
+                </div>
+            </div>
+            <div class="all-tasks-screen">
+                <div class="tasks-header">
+                    <div class="tasks-title">Today's Tasks</div>
+                    <div class="tasks-controls">
+                        <div class="delete-tasks" (click)="deleteAll()">Delete All</div>
+                        <div class="current-date">{{currentDate | date:'fullDate'}}</div>
+                    </div>
+                </div>
+                <div class="tasks-list">
+                    <div class="task-item">
+                        <div *ngFor="let task of tasks">
+                            <div class="task-status" [class.active-task]="!task.isDone"
+                                [class.completed-task]="task.isDone">
+                                <img [src]="task.isDone ? '/assets/material-symbols_check-box.svg' : '/assets/material-symbols_check-box-outline.svg'"
+                                    alt="Check box" class="task-checkbox" />
+                                <div class="task-title">{{ task.taskTitle }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

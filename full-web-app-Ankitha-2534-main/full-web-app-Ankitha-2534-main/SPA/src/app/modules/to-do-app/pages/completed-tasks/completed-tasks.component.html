@@ -1,0 +1,41 @@
+<div class="dashboard">
+    <div class="dashboard-header">
+        <span class="dashboard-title">Completed</span>
+        <div class="sign-out-container" (click)="signOut()">
+            <button type="button" class="sign-out-button">Sign Out</button>
+            <img src="\assets\mdi_logout.svg" alt="LogOut Icon" class="sign-out-icon" />
+        </div>
+    </div>
+    <div class="dashboard-container">
+        <div class="tasks-section">
+            <div class="tasks-header">
+                <div class="tasks-title">Today's Completed Tasks</div>
+                <div class="tasks-controls">
+                    <div class="current-date">{{currentDate | date:'fullDate'}}</div>
+                </div>
+            </div>
+            <div class="tasks-list">
+                <div class="task-item">
+                    <div *ngFor="let task of completedTasks;index as i" (click)="showDiv(i)">
+                        <div class="task-status  completed-task">
+                            <img src='/assets/material-symbols_check-box.svg' alt="Check box" class="task-checkbox" />
+                            <div class="task-title">{{ task.taskTitle }}</div>
+                            <div class="task-action" *ngIf="showTaskBlock==i">
+                                <div class="task-content">
+                                    <div class="task-tagline">{{ task.taskTitle }}</div>
+                                    <div class="task-added-date">Added {{getTimeDifference(task.taskDate)}}</div>
+                                    <div class="task-description-header">{{task.taskTitle}}</div>
+                                    <div class="task-description">{{task.taskDescription}}</div>
+                                </div>
+                                <div class="task-action-icons">
+                                    <img src="assets/material-symbols_check-box.svg" alt="Checkbox"/>
+                                    <img src="assets\ant-design_delete-outlined.svg" alt="delete icon" (click)="deleteTaskById(task.taskId)"/>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Employee Page</title>
+    <link rel="stylesheet" href="/Styles/commonstyle.css" />
+    <link rel="stylesheet" href="/Styles/roleemployeestyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <div class="component">
+        <div class="sidePanel" id="sidePanel1">
+            <div class="side-panel-top">
+                <div class="tezo-logo">
+                    <img src="/Images/TezoLogo.svg" alt="Tezo_Logo" />
+                </div>
+                <div class="sidepanel-detail">
+                    <div class="main-heading">
+                        <img src="/Images/minus.png" alt="Hyphen Image" />
+                        <div>ALL</div>
+                    </div>
+                    <a href="index.html" title="Dashboard">
+                        <div class="sidepanel-content">
+                            <div class="sidepanel-text">
+                                <div class="red-black-icon">
+                                    <img src="/Images/Horizontal nav/Dashboard.svg" alt="Lock_icon" class="black-img" />
+                                    <img src="/Images/dashboard_red.svg" alt="Lock_icon" class="red-img" />
+                                </div>
+                                <div class="heading-text">Dashboard</div>
+                            </div>
+                            <div class="arrow-icon">
+                                <img src="/Images/next.png" alt="DropdownIcon" class="dropdown-icon heading-text black-img" />
+                                <img src="/Images/rightarrow.png" alt="DropdownIcon" class="dropdown-icon heading-text red-img" />
+                            </div>
+                        </div>
+                    </a>
+                    <a href="employee.html" title="Employees">
+                        <div class="employee-block">
+                            <div class="sidepanel-content">
+                                <div class="sidepanel-text">
+                                    <div class="red-black-icon">
+                                        <img src="/Images/employees_black.svg" alt="Lock_icon" class="black-img" />
+                                        <img src="/Images/Horizontal nav/Employees.svg" alt="Lock_icon" class="red-img" />
+                                    </div>
+                                    <div class="heading-text">Employees</div>
+                                </div>
+                                <div class="arrow-icon">
+                                    <img src="/Images/next.png" alt="DropdownIcon" class="dropdown-icon heading-text black-img" />
+                                    <img src="/Images/rightarrow.png" alt="DropdownIcon" class="dropdown-icon heading-text red-img" />
+                                </div>
+                            </div>
+                            <!-- <div class="content-list heading-text employee-content-list">
+                                <li><a href="#" title="All">All</a></li>
+                                <li><a href="#" title="Active">Active</a></li>
+                                <li><a href="#" title="In Active">In Active</a></li>
+                            </div> -->
+                        </div>
+                    </a>
+                    <div class="main-heading">
+                        <img src="/Images/minus.png" alt="Hyphen Image" />
+                        <div>ROLE / USER MANAGEMENT</div>
+                    </div>
+                    <a href="role.html" title="User Mgmt Roles">
+                        <div class="sidepanel-content">
+                            <div class="sidepanel-text">
+                                <div class="red-black-icon">
+                                    <img src="/Images/Horizontal nav/Roles.svg" alt="Lock_icon" class="black-img" />
+                                    <img src="/Images/roles_red.svg" alt="Lock_icon" class="red-img" />
+                                </div>
+                                <div class="heading-text">Roles</div>
+                            </div>
+                            <div class="arrow-icon">
+                                <img src="/Images/next.png" alt="DropdownIcon" class="dropdown-icon heading-text black-img" />
+                                <img src="/Images/rightarrow.png" alt="DropdownIcon" class="dropdown-icon heading-text red-img" />
+                            </div>
+                        </div>
+                    </a>
+                    <div class="sidepanel-content">
+                        <div class="sidepanel-text">
+                            <div class="red-black-icon">
+                                <img src="/Images/Horizontal nav/assign user.svg" alt="Lock_icon" class="black-img" />
+                                <img src="/Images/assignuser_red.svg" alt="Lock_icon" class="red-img" />
+                            </div>
+                            <div class="heading-text">Assign User Roles</div>
+                        </div>
+                        <div class="arrow-icon">
+                            <img src="/Images/next.png" alt="DropdownIcon"
+                                class="dropdown-icon heading-text black-img" />
+                            <img src="/Images/rightarrow.png" alt="DropdownIcon"
+                                class="dropdown-icon heading-text red-img" />
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+            <div class="update-install">
+                <p class="head-text">Install new update 2.3.1A</p>
+                <p class="sub-text">Allow to launch new update for the AD application</p>
+                <div class="update-button">
+                    <button class="update-button-1">Dismiss</button>
+                    <button class="update-button-1">Accept</button>
+                </div>
+            </div>
+        </div>
+        <div class="side-handle-icon"><img src="/Images/handle.png" alt="Scroll" id="sideBar" class="side-bar1"
+                onclick="sideBarFunction()" /></div>
+        <div class="dashboard" id="dashBoard1">
+            <header>
+                <div class="searchBar">
+                    <img src="/Images/bx-search.png" alt="Search_icon" />
+                    <input type="text" placeholder="Search"/>
+                </div>
+                <div class="iconsOfSearch">
+                    <div id="iconsOfSearchImages">
+                        <span id="iconsOfSearch1"><img src="/Images/Vertical Navbar/Language.svg" alt="Language" /></span>
+                        <span id="iconsOfSearch1"><img src="/Images/Vertical Navbar/Categories.svg" alt="Categories_icon" /></span>
+                        <span id="iconsOfSearch1"><img src="/Images/Vertical Navbar/Mode.svg" alt="Mode_icon" /></span>
+                        <span id="iconsOfSearch1"><img src="/Images/Vertical Navbar/Notifications.svg" alt="Notification_icon" /></span>
+                    </div>
+                    <div class="profile_data" id="iconsOfSearch1">
+                        <img src="/Images/emp9.png" alt="ProfileImage" />
+                        <div class="select-profile-search">
+                            <span>Jhon Abraham</span><br>
+                            <select name="Profile" class="john-profile1" title="John Profile">
+                                <option value="Admin">Admin</option>
+                                <option value="Accounts">Accounts</option>
+                                <option value="Settings">Settings</option>
+                                <option value="Help">Help</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="role-employee-row">
+                <div class="role-data">
+                    <div class="role-data-direction">
+                        <div>Role</div>
+                        <img src="/Images/next.png" alt="right-arrow" />
+                        <div>Employee</div>
+                    </div>
+                    <div class="role-employee-text">All the roles are configured here</div>
+                </div>
+                <a href="addemployee.html">
+                    <div class="add-button">
+                        <img src="/Images/Add.svg" alt="Add icon"/>
+                        <button>ADD EMPLOYEE</button>
+                    </div>
+                </a>
+            </div>
+            <div class="role-description">
+                <div>Role Description</div>
+                <p>Configure the providers that are available to users when they sign in.Configure the providers that
+                    are available to users when they sign in.Configure the providers that are available to users when
+                    they sign in.Configure the providers that are available to users when they sign in.</p>
+            </div>
+            <div class="detail-of-employee">
+                    <!-- <div class="robert-person">
+                        <div class="robert">
+                            <img src="/Images/emp1.png" alt="Profile pic" />
+                            <div class="robert-data">
+                                <div class="robert-name">Robert Fox</div>
+                                <div class="robert-role">Head Of Product Design</div>
+                            </div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/idcard.svg" alt="Id Card"/>
+                            <div>INF122</div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/email.svg" alt="email icon"/>
+                            <div>adamk@yahoo.com</div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/team-icon.svg" alt="Team Icon"/>
+                            <div>Technology</div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/location.svg" alt="Location Icon"/>
+                            <div>Stockton, New Hampshire</div>
+                        </div>
+                        <div class="role-employee-icon1">
+                            <div>view</div>
+                            <img src="/Images/directionarrow.svg" alt="Direction arrow"/>
+                        </div>
+                    </div>
+                    <div class="robert-person">
+                        <div class="robert">
+                            <img src="/Images/emp3.png" alt="Profile pic" />
+                            <div class="robert-data">
+                                <div class="robert-name">Marvin McKinney</div>
+                                <div class="robert-role">Head Of Engineering</div>
+                            </div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/idcard.svg" alt="Id Card"/>
+                            <div>INF150</div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/email.svg" alt="email icon"/>
+                            <div>sravani@yahoo.com</div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/team-icon.svg" alt="Team Icon"/>
+                            <div>Admin</div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/location.svg" alt="Location Icon"/>
+                            <div>Syracuse, Connecticut</div>
+                        </div>
+                        <div class="role-employee-icon1">
+                            <div>view</div>
+                            <img src="/Images/directionarrow.svg" alt="Direction arrow"/>
+                        </div>
+                    </div>
+                    <div class="robert-person">
+                        <div class="robert">
+                            <img src="/Images/emp4.png" alt="Profile pic" />
+                            <div class="robert-data">
+                                <div class="robert-name">Eleanor Pena</div>
+                                <div class="robert-role">Senior Interaction Designer</div>
+                            </div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/idcard.svg" alt="Id Card"/>
+                            <div>INF240</div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/email.svg" alt="email icon"/>
+                            <div>grolschie@mac.com</div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/team-icon.svg" alt="Team Icon"/>
+                            <div>Customer Executive</div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/location.svg" alt="Location Icon"/>
+                            <div>Portland, Illinois</div>
+                        </div>
+                        <div class="role-employee-icon1">
+                            <div>view</div>
+                            <img src="/Images/directionarrow.svg" alt="Direction arrow"/>
+                        </div>
+                    </div>
+                    <div class="robert-person">
+                        <div class="robert">
+                            <img src="/Images/emp2.png" alt="Profile pic" />
+                            <div class="robert-data">
+                                <div class="robert-name">Jane Cooper</div>
+                                <div class="robert-role">Product Analyst</div>
+                            </div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/idcard.svg" alt="Id Card"/>
+                            <div>INF389</div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/email.svg" alt="email icon"/>
+                            <div>chronos@aol.com</div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/team-icon.svg" alt="Team Icon"/>
+                            <div>Product</div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/location.svg" alt="Location Icon"/>
+                            <div>Coppell, Virginia</div>
+                        </div>
+                        <div class="role-employee-icon1">
+                            <div>view</div>
+                            <img src="/Images/directionarrow.svg" alt="Direction arrow"/>
+                        </div>
+                    </div>
+                    <div class="robert-person">
+                        <div class="robert">
+                            <img src="/Images/emp5.png" alt="Profile pic" />
+                            <div class="robert-data">
+                                <div class="robert-name">Floyd Miles</div>
+                                <div class="robert-role">Visual Designer</div>
+                            </div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/idcard.svg" alt="Id Card"/>
+                            <div>INF209</div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/email.svg" alt="email icon"/>
+                            <div>dgatwood@msn.com</div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/team-icon.svg" alt="Team Icon"/>
+                            <div>Customer Executive</div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/location.svg" alt="Location Icon"/>
+                            <div>Lansing, Illinois</div>
+                        </div>
+                        <div class="role-employee-icon1">
+                            <div>view</div>
+                            <img src="/Images/directionarrow.svg" alt="Direction arrow"/>
+                        </div>
+                    </div>
+                    <div class="robert-person">
+                        <div class="robert">
+                            <img src="/Images/emp6.png" alt="Profile pic" />
+                            <div class="robert-data">
+                                <div class="robert-name">Dianne Russell</div>
+                                <div class="robert-role">Full Stack Software Engineer</div>
+                            </div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/idcard.svg" alt="Id Card"/>
+                            <div>INF922</div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/email.svg" alt="email icon"/>
+                            <div>kspiteri@live.com</div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/team-icon.svg" alt="Team Icon"/>
+                            <div>Human Research</div>
+                        </div>
+                        <div class="role-employee-icon">
+                            <img src="/Images/location.svg" alt="Location Icon"/>
+                            <div>Corona, Michigan</div>
+                        </div>
+                        <div class="role-employee-icon1">
+                            <div>view</div>
+                            <img src="/Images/directionarrow.svg" alt="Direction arrow"/>
+                        </div>
+                    </div> -->
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/Javascript/commonjs.js"></script>
+    <script src="/Javascript/employeejs.js"></script>
+</body>
+
+</html>

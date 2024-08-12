@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700&display=swap');
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: 'Public Sans', sans-serif;
+}
+.new-role{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.doj-location{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.input-field-select{
+    border: none;
+    outline: none;
+    width: 18rem;
+    height: 1.7rem;
+    background-color: #F4F5F7;
+    border-radius: 5px;
+}
+.emp-info-data{
+    margin: 1rem 0;
+/* .emp-info-data input{
+    width: 17rem;
+} */
+}
+.employee-detail{
+    color: #6B707D;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+.input-detail{
+    height: 1.9rem;
+    width: 18rem;
+    padding: 0.2rem;
+    border: 2px solid #DFE1E6;
+    outline-color: #4C9AFF;
+    border-radius: 3px;
+}
+.description{
+    width: 70rem;
+}
+textarea{
+    resize: none;
+    padding: 0.5rem;
+    color: #6B707D;
+    margin: 0.5rem 0;
+}
+.input-detail1{
+    border: 2px solid #DFE1E6;
+    outline-color: #4C9AFF;
+    border-radius: 3px;
+}
+.options{
+    display: flex;
+    padding: 0.5rem;
+    border: 0.5px solid #DFE1E6;
+    margin: 0.5rem 0;
+    width: 16.5rem;
+    height: 2rem;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: space-between;
+    flex: 1;
+}
+.option-profile{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    flex: 1;
+}
+.option-profile img{
+    height: 1rem;
+}
+.search-employee{
+    border: none;
+    outline: none;
+    /* background: url("/Images/down-arrow-black.png") no-repeat;
+    background-size: 15px;
+    background-position: 15.5rem; */
+}
+.select-search-role{
+    border: 2px solid #DFE1E6;
+    height: 2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 17rem;    
+    position: relative;
+    z-index: 0;
+}
+.select-search-role img{
+    height: 1rem;
+}
+.submit-btn{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+}
+.submit-btn button{
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.btn-1{
+    background-color: #FBEBEB;
+    color: #F67171;
+    cursor: pointer;
+}
+.btn-2{
+    background-color: #F44848;
+    color: #ffffff;
+    cursor: pointer;
+}
+.option-container{
+    position: absolute;
+    z-index: 2;
+}
+.options .option-profile {
+    color: #172B4D;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
